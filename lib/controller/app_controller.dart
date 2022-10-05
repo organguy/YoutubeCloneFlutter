@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:youtube_clone/components/youtube_bottom_sheet.dart';
 
 enum RouteName{
-  Home, Search, Add, Subscribe, Inventory
+  Home, Explore, Add, Subscribe, Inventory
 }
 
 class AppController extends GetxService{

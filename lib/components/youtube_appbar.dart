@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class YoutubeAppBar extends StatelessWidget {
   const YoutubeAppBar({Key? key}) : super(key: key);
@@ -22,7 +23,9 @@ class YoutubeAppBar extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: GestureDetector(
-            onTap: (){},
+            onTap: (){
+              Get.toNamed('/search');
+            },
             child: SizedBox(
               width: 30,
               height: 30,

@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:youtube_clone/controller/app_controller.dart';
 import 'package:youtube_clone/ui/home.dart';
 import 'package:youtube_clone/ui/inventory.dart';
-import 'package:youtube_clone/ui/search.dart';
+import 'package:youtube_clone/ui/explore.dart';
 import 'package:youtube_clone/ui/subscribe.dart';
 
 class App extends GetView<AppController> {
@@ -17,9 +17,9 @@ class App extends GetView<AppController> {
       body: Obx((){
         switch(RouteName.values[controller.currentIndex.value]){
           case RouteName.Home:
-            return const Home();
-          case RouteName.Search:
-            return const Search();
+            return Home();
+          case RouteName.Explore:
+            return const Explore();
           case RouteName.Add:
             break;
           case RouteName.Subscribe:
